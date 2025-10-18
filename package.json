@@ -1,0 +1,17 @@
+{
+  "name": "@nicfont/create-react-app",
+  "version": "1.0.0",
+  "description": "Create a @nicolasfont/react-app-template application",
+  "type": "module",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "nicolasfont",
+  "license": "ISC",
+  "devDependencies": {
+    "giget": "^2.0.0"
+  }
+}
