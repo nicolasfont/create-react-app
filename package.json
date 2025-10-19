@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "nicolasfont",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "giget": "^2.0.0"
   }
 }
