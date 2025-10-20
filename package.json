@@ -1,7 +1,7 @@
 {
   "name": "@nicfont/create-react-app",
   "version": "1.0.2",
-  "description": "Create a @nicolasfont/react-app-template application",
+  "description": "Create a nicolasfont/react-app-template application",
   "type": "module",
   "main": "src/index.ts",
   "bin": "dist/index.js",
