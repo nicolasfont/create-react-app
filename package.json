@@ -3,15 +3,21 @@
   "version": "1.0.1",
   "description": "Create a @nicolasfont/react-app-template application",
   "type": "module",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "src/index.ts",
+  "bin": "./src/index.ts",
   "scripts": {
-    "start": "node index"
+    "build": "tsc -b",
+    "start": "node src/index.ts"
   },
   "keywords": [],
   "author": "nicolasfont",
   "license": "ISC",
   "dependencies": {
     "giget": "^2.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.1",
+    "@types/node": "^24.8.1",
+    "typescript": "^5.9.3"
   }
 }
