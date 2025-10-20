@@ -11,12 +11,14 @@
   },
   "scripts": {
     "build": "tsc -b",
+    "check": "biome check --write",
     "prepare": "npm run build"
   },
   "dependencies": {
     "giget": "^2.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.6",
     "@tsconfig/node24": "^24.0.1",
     "@types/node": "^24.8.1",
     "typescript": "^5.9.3"
