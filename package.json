@@ -15,7 +15,8 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "giget": "^2.0.0"
+    "giget": "^2.0.0",
+    "replace-in-file": "^8.3.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.6",
