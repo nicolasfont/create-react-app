@@ -3,15 +3,14 @@
   "version": "1.0.3",
   "description": "Create a nicolasfont/react-app-template application",
   "type": "module",
+  "license": "ISC",
+  "author": "nicolasfont",
   "main": "src/index.ts",
   "bin": "dist/index.js",
   "scripts": {
     "build": "tsc -b",
-    "start": "node dist/index.js"
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "nicolasfont",
-  "license": "ISC",
   "dependencies": {
     "giget": "^2.0.0"
   },
