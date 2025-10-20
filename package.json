@@ -5,8 +5,10 @@
   "type": "module",
   "license": "ISC",
   "author": "nicolasfont",
-  "main": "src/index.ts",
-  "bin": "dist/index.js",
+  "exports": "./dist/index.js",
+  "bin": {
+    "create-react-app": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc -b",
     "prepare": "npm run build"
