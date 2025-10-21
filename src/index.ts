@@ -23,7 +23,7 @@ const getAppName = async () => {
   });
 
   if (isCancel(value)) {
-    cancel("Cancelled");
+    cancel("Canceled");
     process.exit(0);
   }
 
