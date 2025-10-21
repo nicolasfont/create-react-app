@@ -1,5 +1,13 @@
 #!/usr/bin/env node
-import { cancel, intro, isCancel, outro, spinner, text } from "@clack/prompts";
+import {
+  cancel,
+  intro,
+  isCancel,
+  log,
+  outro,
+  spinner,
+  text,
+} from "@clack/prompts";
 import { downloadTemplate } from "giget";
 import { replaceInFile } from "replace-in-file";
 
@@ -22,25 +30,34 @@ const getAppName = async () => {
   return String(value);
 };
 
-intro("Creating React application");
+const createReactApp = async () => {
+  intro("Creating React application");
 
-const appName = await getAppName();
+  const appName = await getAppName();
 
-const downloadSpinner = spinner();
-downloadSpinner.start("Downloading template");
-await downloadTemplate("github:nicolasfont/react-app-template", {
-  dir: appName,
-  force: true,
-});
-downloadSpinner.stop("Downloaded template");
+  const downloadSpinner = spinner();
+  downloadSpinner.start("Downloading template");
+  await downloadTemplate("github:nicolasfont/react-app-template", {
+    dir: appName,
+    force: true,
+  });
+  downloadSpinner.stop("Downloaded template");
 
-const prepareSpinner = spinner();
-prepareSpinner.start("Preparing project");
-await replaceInFile({
-  files: `${appName}/**/*`,
-  from: /react-app-template/g,
-  to: appName,
-});
-prepareSpinner.stop("Prepared project");
+  const prepareSpinner = spinner();
+  prepareSpinner.start("Preparing project");
+  await replaceInFile({
+    files: `${appName}/**/*`,
+    from: /react-app-template/g,
+    to: appName,
+  });
+  prepareSpinner.stop("Prepared project");
 
-outro(`Created ${appName}`);
+  outro(`Created ${appName}`);
+};
+
+try {
+  await createReactApp();
+} catch (error) {
+  log.error(String(error));
+  process.exit(1);
+}
