@@ -1,6 +1,6 @@
-# @nicfont/create-react-app
+# create-react-app
 
-A CLI to scaffold a new React application based on [`nicolasfont/react-app-template`](https://github.com/nicolasfont/react-app-template).
+An NPM initializer to scaffold a React application based on [`nicolasfont/react-app-template`](https://github.com/nicolasfont/react-app-template).
 
 
 ## Usage
