@@ -11,6 +11,7 @@ const getAppName = async () => {
   const value = await text({
     message: "Enter application name",
     placeholder: "react-app",
+    defaultValue: "react-app",
   });
 
   if (isCancel(value)) {
