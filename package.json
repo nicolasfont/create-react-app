@@ -1,6 +1,6 @@
 {
   "name": "@nicfont/create-react-app",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create a nicolasfont/react-app-template application",
   "type": "module",
   "license": "ISC",
