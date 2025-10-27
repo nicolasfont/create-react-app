@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsc -b",
     "check": "biome check --write",
-    "prepare": "npm run build",
+    "prepare": "husky",
     "update": "npx npm-check-updates@latest -u && npm i"
   },
   "dependencies": {
@@ -24,6 +24,8 @@
     "@biomejs/biome": "^2.3.1",
     "@tsconfig/node24": "^24.0.1",
     "@types/node": "^24.9.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
     "typescript": "^5.9.3"
   }
 }
