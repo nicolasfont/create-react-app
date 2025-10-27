@@ -13,7 +13,7 @@
     "build": "tsc -b",
     "check": "biome check --write",
     "prepare": "npm run build",
-    "update": "npx npm-check-updates@latest -u"
+    "update": "npx npm-check-updates@latest -u && npm i"
   },
   "dependencies": {
     "@clack/prompts": "^0.11.0",
