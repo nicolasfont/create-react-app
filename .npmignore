@@ -1,5 +1,22 @@
+# Development sources
 src/
+
+# Local development artifacts
 node_modules/
-tsconfig.json
+.husky/
 package-lock.json
+
+# TypeScript build metadata
 *.tsbuildinfo
+
+# Tooling configuration
+biome.json
+tsconfig.json
+.lintstagedrc
+
+# Logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
